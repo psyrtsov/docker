@@ -1203,22 +1203,23 @@ Get a tarball containing all images and tags in a repository
 
 .. http:get:: /images/(name)/get
 
-  Get a tarball containing all images and metadata for the repository specified by ``name``.
+	Get a tarball containing all images and metadata for the repository specified by ``name``.
 
-  **Example request**
+	**Example request**
 
-  .. sourcecode:: http
+	.. sourcecode:: http
   
            GET /images/ubuntu/get
 
-       **Example response**:
+	**Example response**:
 
-       .. sourcecode:: http
+	.. sourcecode:: http
 
-          HTTP/1.1 200 OK
-    Content-Type: application/x-tar
+	   HTTP/1.1 200 OK
+	   Content-Type: application/x-tar
 
-    Binary data stream
+	   Binary data stream
+
         :statuscode 200: no error
         :statuscode 500: server error
 
@@ -1227,24 +1228,24 @@ Load a tarball with a set of images and tags into docker
 
 .. http:post:: /images/load
 
-  Load a set of images and tags into the docker repository.
+	Load a set of images and tags into the docker repository.
 
-  **Example request**
+	**Example request**
 
-  .. sourcecode:: http
+	.. sourcecode:: http
 
            POST /images/load
 
-         Tarball in body
+           Tarball in body
 
-       **Example response**:
+	**Example response**:
 
-       .. sourcecode:: http
+	.. sourcecode:: http
 
-          HTTP/1.1 200 OK
+           HTTP/1.1 200 OK
 
-        :statuscode 200: no error
-        :statuscode 500: server error
+       :statuscode 200: no error
+       :statuscode 500: server error
 
 3. Going further
 ================
