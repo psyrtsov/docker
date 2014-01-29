@@ -2,4 +2,4 @@ export FORWARD_DOCKER_PORTS=1
 vagrant up
 vagrant halt
 vagrant up
-vagrant ssh -c /vagrant/local/install
+vagrant ssh -c /vagrant/local/docker-scripts/init

@@ -170,7 +170,7 @@ if !FORWARD_DOCKER_PORTS.nil?
   end
 
   Vagrant::VERSION >= "1.1.0" and Vagrant.configure("2") do |config|
-    (49000..49900).each do |port|
+    (49000..49010).each do |port|
       config.vm.network :forwarded_port, :host => port, :guest => port
     end
   end
